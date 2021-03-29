@@ -1,0 +1,12 @@
+body {
+  background-color: lightblue;
+}
+
+#nav {
+  padding-left: 0em;
+}
+
+#nav li {
+  display: inline;
+  list-style-type: none;
+}
