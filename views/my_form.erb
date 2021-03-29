@@ -1,0 +1,8 @@
+<% if params[:username] %>
+  <a href="/my-form">Back</a>
+<% else %>
+  <form method="POST" action="/my-form">
+    <input type="text" name="username" />
+    <input type="submit" value="Submit" />
+  </form>
+<% end %>

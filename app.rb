@@ -15,3 +15,12 @@ end
 get '/smartphonespecs' do
   erb :smartphonespecs, locals: { title: 'Smartphone Specs For Elite Gaming' }
 end
+
+get '/my-form' do
+  erb :my_form, locals: { title: "What's Your Name?" }
+end
+
+post '/my-form' do
+  name = params[:username]
+  erb :my_form, locals: { title: "hello, #{name}" }
+end
