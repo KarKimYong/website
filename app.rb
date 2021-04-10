@@ -21,10 +21,10 @@ get '/macintoshcomputers' do
 end
 
 get '/my-form' do
-  erb :my_form, locals: { title: "What's Your Name?" }
+  erb :my_form, locals: { title: "New Game" }
 end
 
 post '/my-form' do
-  name = params[:username]
-  erb :my_form, locals: { title: "hello, #{name}" }
+  name = params[:name]
+  erb :my_form, locals: { title: "#{name}" }
 end

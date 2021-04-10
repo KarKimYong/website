@@ -1,8 +1,41 @@
-<% if params[:username] %>
+<% if params[:name] %>
+  <ul>
+    <li>Game name: <%= params[:name]%></li>
+    <li>Release date: <%= Date.parse(params[:release]).strftime("%B, %-d, %Y") %></li>
+    <li><img src="<%= params[:image] %>"></li>
+    <li>Company: <%= params[:company].capitalize %></li>
+  </ul>
+
   <a href="/my-form">Back</a>
 <% else %>
   <form method="POST" action="/my-form">
-    <input type="text" name="username" />
+
+    <p>
+      <label for="name">Game Name</label>
+      <input type="text" name="name" />
+    <p>
+
+    <p>
+      <label for="date">Release Date</label>
+      <input type="date" name="release"/>
+    </p>
+
+    <p>
+      <label for="image">Image Source</label>
+      <input type="text" name="image"/>
+    </p>
+
+    <p>
+      <label for="company">Company</label>
+      <select name="company">
+        <option value="nintendo">Nintendo</option>
+        <option value="sega">Sega</option>
+        <option value="sony">Sony</option>
+        <option value="microsoft">Microsoft</option>
+        <option value="gameloft">Gameloft</option>
+      </select>
+    </p>
+
     <input type="submit" value="Submit" />
   </form>
 <% end %>
