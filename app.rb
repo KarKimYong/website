@@ -20,6 +20,10 @@ get '/macintoshcomputers' do
   erb :macintoshcomputers, locals: { title: 'History Of Apple Macintosh' }
 end
 
+get '/starwarsfranchise' do
+  erb :starwarsfranchise, locals: { title: 'History Of Star Wars' }
+end
+
 get '/my-form' do
   erb :my_form, locals: { title: "New Game" }
 end
