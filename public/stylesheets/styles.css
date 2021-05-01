@@ -1,12 +1,30 @@
 body {
-  background-color: lightblue;
+  background: rgb(97,97,102);
+  background: linear-gradient(0deg, rgba(97,97,102,1) 0%, rgba(64,64,227,1) 0%, rgba(170,169,204,1) 56%, rgba(0,212,255,1) 90%);
+  font-family: 'Open Sans', sans-serif;
+  font-size: min(max(1rem, 4vw), 22px);
 }
 
-#nav {
+nav ul {
   padding-left: 0em;
 }
 
-#nav li {
-  display: inline;
+nav li {
   list-style-type: none;
+  border-bottom: 1px solid gray;
+  margin: 1em 0em;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: min(max(1rem, 4vw), 28px);
+}
+
+#wrapper {
+  margin: 0px auto;
+  max-width: 1000px;
+}
+
+#wrapper > h1 {
+  font-family: 'Lato', sans-serif;
 }

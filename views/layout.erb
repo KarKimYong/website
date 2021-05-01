@@ -2,19 +2,27 @@
   <head>
     <title><%= title %></title>
     <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
   </head>
   <body>
-    <ul id="nav">
-      <li><a href="/">Home</a></li>
-      <li><a href="/games">Video Game Titles</a></li>
-      <li><a href="/vgt">Video Game Gameplays</a></li>
-      <li><a href="/smartphonespecs">Smartphones Specs For Gaming</a></li>
-      <li><a href="/macintoshcomputers">History Of Apple Macintosh</a></li>
-      <li><a href="/starwarsfranchise">History Of Star Wars 1977-Present</a></li>
-      <li><a href="/my-form">My Form</a></li>
-    </ul>
-    <h1><%= title %></h1>
-    <%= yield %>
+    <div id="wrapper">
+      <a href="/">Home</a>
+
+      <h1><%= title %></h1>
+      <%= yield %>
+
+      <nav>
+        <ul>
+          <li><a href="/games">Video Game Titles</a></li>
+          <li><a href="/vgt">Video Game Gameplays</a></li>
+          <li><a href="/smartphonespecs">Smartphones Specs For Gaming</a></li>
+          <li><a href="/macintoshcomputers">History Of Apple Macintosh</a></li>
+          <li><a href="/starwarsfranchise">History Of Star Wars 1977-Present</a></li>
+          <li><a href="/my-form">My Form</a></li>
+        </ul>
+      <nav>
+    </div>
   </body>
 </html>
